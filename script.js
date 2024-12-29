@@ -81,10 +81,10 @@ function updateGame() {
 // Changer la direction
 function changeDirection(event) {
   const { key } = event;
-  if (key === "ArrowUp" && direction.y === 0) direction = { x: 0, y: -1 };
-  if (key === "ArrowDown" && direction.y === 0) direction = { x: 0, y: 1 };
-  if (key === "ArrowLeft" && direction.x === 0) direction = { x: -1, y: 0 };
-  if (key === "ArrowRight" && direction.x === 0) direction = { x: 1, y: 0 };
+  if (key === "Z" && direction.y === 0) direction = { x: 0, y: -1 };
+  if (key === "S" && direction.y === 0) direction = { x: 0, y: 1 };
+  if (key === "Q" && direction.x === 0) direction = { x: -1, y: 0 };
+  if (key === "D" && direction.x === 0) direction = { x: 1, y: 0 };
 }
 
 // Démarrer le jeu
